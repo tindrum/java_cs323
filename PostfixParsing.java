@@ -70,23 +70,23 @@ public class PostfixParsing
 					switch(c)
 					{
 					case '+':
-						inValue=valueA+valueB;
+						inValue=valueB+valueA;
 						infixStack.push(inValue);
 						break;
 					case '-':
-						inValue=valueA-valueB;
+						inValue=valueB-valueA;
 						infixStack.push(inValue);
 						break;
 					case '*':
-						inValue=valueA*valueB;
+						inValue=valueB*valueA;
 						infixStack.push(inValue);
 						break;
 					case '/':
-						inValue=valueA/valueB;
+						inValue=valueB/valueA;
 						infixStack.push(inValue);
 						break;
 					case '^':
-						inValue=valueA^valueB;
+						inValue=valueB^valueA;
 						infixStack.push(inValue);
 						break;
 					}
